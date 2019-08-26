@@ -1,0 +1,10 @@
+public class Favorite_1 {
+    public static void main(String[] args)
+    {
+
+        System.out.print("Name: Timothy Wilks\n" + "Birthday: Jan. 20, 2003\n"
+        + "Hobby: Sports(Mainly Hockey) & computer programing\n" + "Fav Book: Lord of the Flies\n"
+        + "Fav Movie: 9");
+
+    }
+}
