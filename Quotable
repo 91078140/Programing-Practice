@@ -1,0 +1,6 @@
+public class Quotable {
+    public static void main(String args[]) {
+
+      System.out.println("\"You miss every shot you never take.\"\n\t\t\t\t- Wayne Gretzky");
+    }
+}
