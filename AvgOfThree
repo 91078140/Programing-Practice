@@ -1,0 +1,14 @@
+public class AvgOfThree 
+{
+    public static void main(String args[]) 
+    {
+      int x=5;
+      int y=25;
+      int z=10;
+      double avg;
+      // allowes me to store decimals
+      avg = (double)(x + y + z)/3;
+
+      System.out.println("The average of " + x + ", " + y + ", and " + z + " is " + avg);
+    }
+}
