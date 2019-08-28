@@ -1,0 +1,19 @@
+public class ArithOfTwo 
+{
+    public static void main(String args[]) 
+    {
+      double x=36.0;
+      double y=13.0;
+      double sum;
+      double dif;
+      double pro;
+      
+      sum = x + y;
+      dif = x - y;
+      pro = x * y;
+      
+
+      System.out.println("The sum of x and y is: " + sum + "\nThe difference is: " 
+      + dif + "\nThe product is: " + pro);
+    }
+}
