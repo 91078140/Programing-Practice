@@ -1,0 +1,13 @@
+public class toSeconds {
+    public static void main(String args[]) {
+        
+        int hour = 2;
+        int min = 36;
+        int sec = 10;
+        int totalSec;
+        totalSec = (hour * 3600) + (min * 60) + sec;
+
+      System.out.println(hour + " hours, " + min + " minutes, and " + sec
+      + " seconds is equal to " + totalSec + " seconds.");
+    }
+}
