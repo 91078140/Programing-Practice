@@ -1,0 +1,12 @@
+public class NoWorries 
+{
+    public static void main(String args[])
+    {
+        
+        String timon = new String("Hakuna matata, it means no worries for the rest of your days");
+        String nowor = timon.substring(24, 34);
+        String a4 = timon.replace('a', '4');
+
+      System.out.println(timon + "\n" + nowor + "\n" + a4);
+    }
+}
