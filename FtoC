@@ -1,0 +1,14 @@
+public class FtoC {
+    public static void main(String args[]) {
+        final int Base = 32;
+        final double Conversion_factor = 9.0 / 5.0;
+        double celsiusTemp;
+        int FahrenheitTemp = 80;// convert this value
+        celsiusTemp = (FahrenheitTemp - Base) / Conversion_factor;
+        
+        
+      System.out.println("Fahrenheit Temperature: " + FahrenheitTemp);
+      System.out.println("Celsius Temperature: " + celsiusTemp);
+      
+    }
+}
