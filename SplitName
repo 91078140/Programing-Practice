@@ -1,0 +1,16 @@
+public class splitName 
+{
+    public static void main(String args[])
+    {
+      String fnam = new String("Timothy");
+      String lnam = new String("Wilks");
+      String fullnam = fnam.concat(" " + lnam);
+      String introuble = fullnam.toUpperCase();
+
+      System.out.println("My name is " + fullnam);
+      System.out.println("The length of my first name is " + fnam.length() 
+      + "\nThe length of my last name is " + lnam.length()
+      + "\nThe length of my full name is " + fullnam.length());
+      System.out.println("My name is " + introuble + " when I'm in trouble.");
+    }
+}
