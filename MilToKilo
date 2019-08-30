@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class MilToKilo {
+    public static void main(String args[]) {
+     Scanner miles = new Scanner(System.in);
+     double kilo;
+     System.out.println("Enter a random amount of miles.");
+     kilo = (miles.nextDouble()) * 1.60935;
+
+      System.out.println("That is equal to " + kilo + " kilometers.");
+    }
+}
