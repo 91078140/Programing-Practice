@@ -1,0 +1,21 @@
+import java.util.Math;
+import java.util.*;
+
+public class Coordinates {
+    public static void main(String args[]) {
+       Scanner x1 = new Scanner(System.in);
+       Scanner y1 = new Scanner(System.in);
+       Scanner x2 = new Scanner(System.in);
+       Scanner y2 = new Scanner(System.in);
+       double distance;
+       int xy;
+       
+       System.out.println("Enter two coordinates.");
+       
+       
+       xy = Math.pow((x2.nextInt() - x1.nextInt()), 2) + Math.pow((y2.nextInt() - y1.nextInt()), 2);
+       distance = Math.sqrt(xy);
+
+      System.out.println("The distance between them is " + distance + ".");
+    }
+}
