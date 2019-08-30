@@ -1,10 +1,11 @@
-public class Favorite_2 {
+public class Favorite_2 
+{
     public static void main(String[] args)
     {
 
-        System.out.print("Name: Timothy Wilks\nAKA: \"Tim\"\n" + "Birthday: 1\\20\\03\n"
-        + "Hobby: Sports(Mainly Hockey) & computer programing\n" + "Fav Book: \'Lord of the Flies\'\n"
-        + "Fav Movie: \"9\"");
+        System.out.print("Name:\tTimothy Wilks\nAKA:\t\"Tim\"\n" + "Birthday:\t1\\20\\03\n"
+        + "Hobby:\tSports(Mainly Hockey) & computer programing\n" + "Fav Book:\t\'Lord of the Flies\'\n"
+        + "Fav Movie:\t\"9\"");
 
     }
 }
