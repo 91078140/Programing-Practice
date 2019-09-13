@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class dementionsOfSpheres 
+{
+    public static void main(String args[])
+    {
+     Scanner keyboard = new Scanner(System.in);
+     int radius;
+     double V, SA;
+     
+     System.out.println("Enter the circles radius: ");
+     radius = keyboard.nextInt();
+     
+     V = (4/3) * Math.PI * Math.pow(radius, 3);
+     SA = 4 * Math.PI * Math.pow(radius, 2);
+     
+     System.out.println("The surface area is: " + SA + "\nThe volume is: " + V);
+     
+     
+    }// end of main method
+}// end of class
