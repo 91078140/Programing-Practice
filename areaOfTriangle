@@ -1,23 +1,24 @@
 import java.util.Scanner;
-import java.lang.DecimalFormat;
 
-public class areaOfTriangle {
-    public static void main(String args[]) {
+public class areaOfTriangle 
+{
+    public static void main(String args[]) 
+    {
         Scanner keyboard = new Scanner(System.in);
-        int s, a, b, c, x;
-        double area;
+        int a, b, c;
+        double area, s, x;
         
         System.out.println("Enter the sides of a triangle: ");
         a = keyboard.nextInt();
         b = keyboard.nextInt();
         c = keyboard.nextInt();
         
-        s = (1/2) * (a + b + c);
+        s = (.5) * (a + b + c);
         x = s * (s - a) * (s - b) * (s - c);
-        area = Math.sqrt(x, 2);
+        area = Math.sqrt(x);
         
         System.out.println("The area of the triangle is: ");
         System.out.printf("%.3f%n", area);
         
-    }
-}
+    }// end of main method
+}// end of class
