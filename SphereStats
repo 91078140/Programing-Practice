@@ -11,7 +11,7 @@ public class dementionsOfSpheres
      System.out.println("Enter the circles radius: ");
      radius = keyboard.nextInt();
      
-     V = (4/3) * Math.PI * Math.pow(radius, 3);
+     V = (1.33) * Math.PI * Math.pow(radius, 3);
      SA = 4 * Math.PI * Math.pow(radius, 2);
      
      System.out.println("The surface area is: " + SA + "\nThe volume is: " + V);
