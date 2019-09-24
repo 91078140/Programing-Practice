@@ -13,7 +13,7 @@ public class areaOfTriangle
         b = keyboard.nextInt();
         c = keyboard.nextInt();
         
-        s = a + b + c;
+        s = (a + b + c) / 2;
         x = s * (s - a) * (s - b) * (s - c);
         area = Math.sqrt(x);
         
