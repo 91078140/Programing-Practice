@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class discount
+{
+    public static void main(String[] args)
+    {
+        Scanner key = new Scanner(System.in);
+        double cost;
+        String day;
+
+        System.out.println("What day is it: ");
+        day = key.next();
+        System.out.println("How much was you purchase: ");
+        cost = key.nextDouble();
+
+        if (day.equalsIgnoreCase("Tuesday"))
+        {
+            if(cost >= 20.00)
+            {
+                System.out.println("You are eligible for a special discount!");
+            }//end of inner if for tuesday
+            else
+            {
+                System.out.println("Sorry, you can't get a discount.");
+            }// end of inner else for tuesday
+        }// end of tuesday if
+
+        else if(day.equalsIgnoreCase("Friday"))
+        {
+           if((cost % 2.00) == 0)
+           {
+               System.out.println("You are eligible for a special discount!");
+           }// end of inner if for friday
+            else
+           {
+               System.out.println("Sorry, you can't get a discount.");
+           }// end of inner else for Friday
+        }// end of if for friday
+
+        else if (day.equalsIgnoreCase("Wednesday") || cost >= 40.00)
+        {
+            System.out.println("You are eligible for a special discount!");
+        }// end of if for wednesday
+
+    }// end of main method
+}// end of class
