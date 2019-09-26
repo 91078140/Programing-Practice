@@ -13,27 +13,22 @@ public class whatDay
         System.out.println("Enter the day of the week: ");
         day = key.next();
 
-        if (age < 18)
-        {
-            if (day == "Saturday" || day == "Sunday")
+
+            if (day.equalsIgnoreCase("Saturday") || day.equalsIgnoreCase("Sunday"))
             {
                 System.out.println("It is time to celebrate the weekend!");
-            }//end of inner minors if
+            }//end of if
             else
             {
-                System.out.println("It is a school day.");
-            }// end of inner else for minor
-        }//  end of minors if
-        else
-        {
-            if (day != "Saturday" || day != "Sunday")
-            {
-                System.out.println("It is time to celebrate the weekend!");
-            }//end of inner if for adults
-            else
-            {
-                System.out.println("It is a work day.");
-            }// end of inner else for adults
-        }//end of else for minor
+                if(age < 18)
+                {
+                    System.out.println("It is a school day.");
+                }//end of inner minor if
+                else
+                {
+                    System.out.println("It is a work day.");
+                }// end of inner else
+            }// end of else for minor
     }// end of main method
 }// end of class
+
