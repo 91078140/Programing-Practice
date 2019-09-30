@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class highLow
+{
+    public static void main(String[] args)
+    {
+        Scanner key = new Scanner(System.in);
+        int randomNum, guess;
+        randomNum = (int) (Math.random() * 100);
+
+        System.out.println("Guess a random number between 1 and 100 (enter a negative # to quit).");
+        guess = key.nextInt();
+
+        while (guess >= 0)
+        {
+
+            if (guess > randomNum) {
+                System.out.println("Too High! Try Again.");
+                guess = key.nextInt();
+            }//end of high if
+
+            else if (guess < randomNum) {
+                System.out.println("Too Low! Try Again.");
+                guess = key.nextInt();
+            }// end of low if
+
+            else if (guess == randomNum) {
+                System.out.println("You Win! The number was: " + randomNum);
+                System.out.println("Enter 1 to play again, enter -1 to end game: ");
+                guess = key.nextInt();
+                if (guess == 1)
+                {
+                    randomNum = (int) (Math.random() * 100);
+                    System.out.println("Guess a random number between 1 and 100 (enter a negative # to quit).");
+                    guess = key.nextInt();
+                }// end of inner restart if
+            }// end of right if
+        }// end of game
+        System.out.println("Thanks for playing, Goodbye!");
+
+    }// end of main method
+}// end of class
